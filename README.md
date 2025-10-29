@@ -1,11 +1,11 @@
-# 🛍️ Customer Conversion Prediction — Retail Web Session Intelligence (RWSI)
+#  Customer Conversion Prediction — Retail Web Session Intelligence (RWSI)
 
 This project aims to predict **customer conversion likelihood** (whether a visitor makes a purchase) using behavioral and session-based data from a retail website.  
 By analyzing the **Retail Web Session Intelligence (RWSI)** dataset, we explore patterns in user engagement, browsing behavior, and contextual factors to improve marketing efficiency and customer targeting.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Understand the key factors driving customer conversions.
 - Handle missing values and categorical variables effectively.
 - Address multicollinearity and outliers.
@@ -75,7 +75,7 @@ Two scaling techniques were compared:
 
 ---
 
-## 🤖 Models Implemented
+##  Models Implemented
 
 | Model | Description | Notes |
 |--------|--------------|-------|
@@ -85,13 +85,13 @@ Two scaling techniques were compared:
 
 ---
 
-## ⚙️ XGBoost Hyperparameter Tuning
+##  XGBoost Hyperparameter Tuning
 Grid Search with 5-fold cross-validation was used to find the best parameters:
 
 
 ---
 
-## 📊 Model Evaluation Metrics
+##  Model Evaluation Metrics
 
 | Model | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) | ROC-AUC |
 |--------|-----------|--------------------|------------------|--------------------|----------|
@@ -105,7 +105,7 @@ Grid Search with 5-fold cross-validation was used to find the best parameters:
 
 ---
 
-## 📈 Confusion Matrix (XGBoost)
+## Confusion Matrix (XGBoost)
 
 | Actual / Predicted | 0 | 1 |
 |---------------------|---|---|
@@ -114,7 +114,7 @@ Grid Search with 5-fold cross-validation was used to find the best parameters:
 
 ---
 
-## 🧠 Insights from EDA
+##  Insights from EDA
 - **Weekend visits** were slightly more likely to result in conversions.  
 - **Higher `PageEngagementScore`** strongly correlated with conversion.  
 - **`SessionExitRatio`** and **`ExitRateFirstPage`** negatively impacted purchase likelihood.  
@@ -123,7 +123,7 @@ Grid Search with 5-fold cross-validation was used to find the best parameters:
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 - **Python**
 - **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**
 - **Scikit-learn** (Logistic Regression, Random Forest, SMOTE)
@@ -137,7 +137,7 @@ Standardization improved performance for Logistic Regression.
 Random Forest balanced precision and recall well.
 SMOTE successfully addressed class imbalance, improving recall and F1-score.
 XGBoost achieved the best overall ROC-AUC (0.915) with tuned parameters.
-🧑‍💻 Author
+ Author
 
 Aryan Tyagi
 📧 Email: at9120140@gmail.com
